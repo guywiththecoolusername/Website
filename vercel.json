@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/viewer", "destination": "/api/discord-viewer.js" }
+    { "source": "/viewer", "destination": "/api/proxy.js" }
   ]
 }
