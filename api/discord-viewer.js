@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     return res.status(400).send("❌ Error: Invalid Discord URL!");
   }
 
-  const apiURL = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+  const apiURL = `http://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
 
   try {
     const response = await fetch(apiURL);
