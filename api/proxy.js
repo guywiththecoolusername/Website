@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     }
 
     // Use AllOrigins API to bypass CORS
-    const apiUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+    const apiUrl = `https://allorigins.on.shiper.app/raw?url=${encodeURIComponent(url)}`;
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
