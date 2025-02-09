@@ -4,9 +4,9 @@ export default async function handler(req, res) {
     if (!url) {
       return res.status(400).json({ error: "URL is required" });
     }
-    consr URIurl = encodeURIComponent(url);
+
     // Use AllOrigins API to bypass CORS
-    const apiUrl = `https://allorigins.on.shiper.app/raw?url=${URIurl}`;
+    const apiUrl = `https://allorigins.on.shiper.app/raw?url=${encodeURIComponent(url)}`;
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
