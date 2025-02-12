@@ -1,0 +1,103 @@
+.volume-control {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 32px;
+    padding: 13px;
+    width: 52px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.volume-control:hover {
+    width: 195px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.volume-icon {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volume-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.volume-path {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.volume-path.muted {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.volume-control.muted .volume-path.waves {
+    opacity: 0;
+}
+
+.volume-control.muted .volume-path.muted {
+    opacity: 1;
+}
+
+.volume-slider {
+    width: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+.volume-control:hover .volume-slider {
+    width: 104px;
+    opacity: 1;
+}
+
+/* Custom slider styling */
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.volume-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .volume-control {
+        width: 45px;
+    }
+    
+    .volume-control:hover {
+        width: calc(100vw - 50px);
+        max-width: 195px;
+    }
+
+    .volume-slider {
+        width: calc(100% - 40px);
+    }
+}
