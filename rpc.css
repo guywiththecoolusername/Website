@@ -1,0 +1,218 @@
+:root {
+    --presenceContainerBackground: #00000000;
+    --presenceContainerBorder: 1px solid #00000000;
+    --presenceUsernameColor: #fff;
+    --presenceStatusColor: #b9bbbe;
+    --discordAvatarBorder: 3px solid #202225;
+}
+
+.presence-container {
+    background-color: var(--presenceContainerBackground);
+    border: var(--presenceContainerBorder);
+    border-radius: 25px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    max-width: fit-content;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.presence-container, .presence-content {
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.presence-content {
+    gap: 10px;
+    justify-content: left;
+    padding: 10px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.avatar-container {
+    display: flex;
+}
+
+.avatar-container img:first-child {
+    border: var(--discordAvatarBorder);
+    border-radius: 50%;
+    height: 70px;
+    object-fit: cover;
+    width: 70px;
+}
+
+.avatar-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.status-icon {
+    bottom: 4px;
+    height: 17px;
+    object-fit: cover;
+    position: absolute;
+    right: 4px;
+    width: 17px;
+}
+
+.user-info, .username-section {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.user-info {
+    display: flex;
+    gap: 12px;
+}
+
+.username-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+}
+
+.username-section h3, .username-section span {
+    margin: 0;
+}
+
+.username-section h3 {
+    color: var(--presenceStatusColor);
+    margin-right: 2px;
+}
+
+.username-section h1 {
+    align-items: center;
+    display: flex;
+}
+
+.username {
+    color: var(--presenceUsernameColor);
+}
+
+.badges-container {
+    display: flex;
+    margin-left: 6px;
+}
+
+.badge {
+    display: flex;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.badge img {
+    height: 22px;
+    object-fit: cover;
+    width: 22px;
+}
+
+.status-text {
+    font-style: italic;
+}
+
+/* Status colors */
+.status-online { background-color: #3ba55c; }
+.status-idle { background-color: #faa81a; }
+.status-dnd { background-color: #ed4245; }
+.status-offline { background-color: #747f8d; }
+
+
+
+
+  .status-indicator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    background: #2ecc71; /* Green for online */
+    color: white;
+    transition: background 0.3s ease;
+  }
+
+  .status-indicator[data-status="offline"] {
+    background: #e74c3c; /* Red for offline */
+  }
+
+
+  .big-name-container {
+    width: 300px; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc; /* For visual reference */
+    background: #000;
+    padding: 5px;
+  }
+  
+  .big-name {
+    display: inline-block;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  /* This class is added if the text is too long */
+  .big-name.scrolling {
+    animation: scroll-left 10s linear infinite;
+  }
+  
+  /* Keyframes for scrolling from right to left */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+  /* Container that hides overflow */
+.spotify-text-container {
+    width: 100%;      /* or set a fixed width if needed */
+    overflow: hidden; /* Hide text that overflows */
+    position: relative;
+  }
+  
+  /* Spotify title basic styling */
+  .spotify-title {
+    display: inline-block;
+    white-space: nowrap;  /* Prevent wrapping so we can scroll */
+    /* Initially, no animation */
+  }
+  
+  /* Scrolling animation class */
+  .spotify-title.scrolling {
+    animation: scroll-left 10s linear infinite;
+  }
+  
+  /* Keyframes for scrolling text (from right to left) */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  .div11, .jR3tWx_3a4a8dcc3beaf4519bf5 {
+    align-items: center;
+    display: flex
+;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+  

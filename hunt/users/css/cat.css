@@ -104,14 +104,19 @@ body {
 /* background image / gif / video setup */
 
 .main-container {
-    width: 275px; /* change to 550px for wide template | 275px for normal template */
-    max-width: 80%;
+    display: inline-table;
+    width: 550px; /* change to 550px for wide template | 275px for normal template */
+    min-width: 50%;
+    max-width: 100%;
     padding: 20px;
     border-radius: 25px;
     background-color: rgba(17, 17, 17, 0.65);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
     overflow: visible;
+    height: 370px;
+    min-height: 20%;
+    max-height: 20%;
 }
 
 /* user page setup */
@@ -121,6 +126,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+/* Media query for small screens (phones) */
 
 /* container for pp / username / badges */
 
@@ -226,22 +232,42 @@ body {
 }
 
 /* badge display setup */
+.scale-wrapper {
+    /* Let the wrapper size itself to fit content (inline-block or width:auto) */
+    display: inline-block;  
+    /* or you can keep it block-level if you want it to fill the parent */
+  }
+.main-container {
+    display: inline-table;
+    transform: scale(1);          /* Scale down to 80% */
+    transform-origin: center;   /* Pin it to the top center (or adjust as needed) */
+  }
+  
+  
+
+.pfp {
+    position: relative;
+    top: -10px; /* Move it closer to the top */
+    left: -10px; /* Move it closer to the left */
+}
 
 .bio-container {
+    display: inline-table;
     text-align: center;
-    width: 80%;
-    padding: 15px;
+    width: 100%;
+    padding: 10px;
     background-color: rgba(22, 22, 22, 0.178);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     backdrop-filter: blur(3px);
-    max-width: 100%;
+    max-width: 200%;
     overflow-wrap: break-word;
     margin-bottom: 1.5vh;
     min-height: 29px;
-    justify-content: center;
+    max-height: 100px;
+    justify-content: left;
     align-items: center;
-    height: 100%;
+    height: 50%;
     transition: all 0.3s ease; /* Add smooth transition */
 
 }
@@ -259,6 +285,7 @@ body {
     line-height: 1.5;
     text-align: center;
     filter: drop-shadow(#ffffff 1px 0 7px)!important;
+    min:width: 120%;
 }
 
 /* bio setup */

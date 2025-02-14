@@ -1,0 +1,101 @@
+.bio-container {
+  /* 
+    Flex with wrap:
+    - The first row tries to fit .profile-top and .spotify-container side by side.
+    - If not enough space, .spotify-container goes to the next line and is centered.
+  */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;      /* Vertically center items in a row */
+  justify-content: center;  /* Center items horizontally if they wrap */
+  gap: 1rem;                /* Space between flex items */
+  max-width: 100%;          /* Just an example; adapt as needed */
+  margin: 0 auto;           /* Center the whole container if you want */
+}
+
+/* ========== Profile Top (PFP + Name) ========== */
+.profile-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Name to the right of PFP */
+  flex: 0 1 auto;              /* Shrinks if needed, but doesn't force wrap */
+  gap: 0.75rem;
+}
+
+/* PFP is 70×70 (example) */
+.profile-top .pfp {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;  /* Circular if you want a circle PFP */
+}
+
+/* ========== Spotify Container ========== */
+.spotify-container {
+  gap:1px;
+  justify-content:right;
+  padding:1px;
+  position:relative;
+  white-space:nowrap;
+}
+
+
+/* 20% smaller than 70px => 56px (or use calc(70px * 0.8)) */
+.spotify-album-art {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px; /* Slight rounding; optional */
+}
+
+/* Info (title, details, progress) stacked vertically */
+.spotify-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 150px; /* Adjust as you like */
+}
+
+/* Style your song title/details */
+.spotify-title {
+  font-weight: 600;
+  font-size: 15px; 
+  text-align: right;           /* Or center, depending on your preference */
+
+}
+.spotify-details {
+  font-size: 13px;
+  color: #b9bbbe;
+  margin-top: 2px;
+}
+
+/* Progress bar container */
+.spotify-progress-bar {
+  background: #40444b;
+  height: 5px;
+  border-radius: 2.5px;
+  margin-top: 6px;
+  width: 100%;         /* Fill the width of .spotify-info */
+  max-width: 250px;    /* Optional limit */
+  position: relative;
+}
+
+/* Actual fill of the progress bar */
+#spotifyProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #1db954;
+  border-radius: 2.5px;
+  width: 0%;
+  transition: width 1s linear;
+}
+
+
+
+.div1 {
+  overflow:hidden;
+  white-space:nowrap;
+  display:flex;
+  gap:12px
+}
+
