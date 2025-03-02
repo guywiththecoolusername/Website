@@ -3,7 +3,7 @@
     --presenceContainerBorder: 1px solid #00000000;
     --presenceUsernameColor: #fff;
     --presenceStatusColor: #b9bbbe;
-    --discordAvatarBorder: 3px solid #202225;
+    --discordAvatarBorder: 4px solid #20222500;
 }
 
 .presence-container {
