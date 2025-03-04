@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>clu.ng</title>
+    <link rel="stylesheet" href="hunt/users/css/cat.css">
+    <link rel="stylesheet" href="volume.css">
+    <link rel="stylesheet" href="rpc.css">
+    <link rel="icon" href="hunt\src\img\1281904753252765717.png" type="image/x-icon">
+    <link rel="shortcut icon" href="hunt\src\img\1281904753252765717.png" type="image/x-icon"> 
+    <meta content="follow me on ig @7irate !!" property="og:title" />
+    <meta content="http://clu.ng/" property="og:url" />
+    <meta content="https://i.imgur.com/y6XhCX6.jpeg" property="og:image" />
+    <meta content="#000000" data-react-helmet="true" name="theme-color" />
+        
+        <link rel="stylesheet" href="https://guns.lol/_next/static/css/75729804fad9cb6e.css">
+
+</head>
+<style>
+    .lWepc0_123666a39835a15d8188 {
+        position: absolute;
+        bottom: -3px;
+        right: -3px;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #202225;
+    }
+</style>
+<style>
+    * {
+        cursor: url(https://r2.guns.lol/98d83e91-4eb4-4467-a3b2-4e2965ee130d.png) 16 16, auto !important;
+
+
+    }
+</style>
+<body>
+    <video class="background" autoplay loop playsinline id="backgroundsong">
+        <source src="https://shattereddisk.github.io/rickroll/rickroll.mp4" type="video/mp4">
+    </video>
+    <div class="volume-control">
+        <div class="volume-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="volume-svg">
+                <!-- Speaker icon (always visible) -->
+                <path class="volume-path speaker" d="M6,9 H2 v6 h4 l5,5 V4 L6,9z" />
+                <!-- Sound waves (hidden when muted) -->
+                <path class="volume-path waves" d="M15,8 C17,10 17,14 15,16" />
+                <path class="volume-path waves" d="M18,5 C22,9 22,15 18,19" />
+                <!-- Mute lines (visible when muted) -->
+                <path class="volume-path muted" d="M15,9 L21,15" />
+                <path class="volume-path muted" d="M21,9 L15,15" />
+            </svg>
+        </div>
+        <input type="range" class="volume-slider" min="0" max="100" value="50">
+    </div>
+
+
+    <div id="overlay">
+        <button class="overlaybtn" onclick="removeOverlay()">𝕮𝖔𝖔𝖑</button>
+    </div>
+
+    <div id="user-page">
+
+
+        <div class="main-container" id="mainDiv">
+            <script src="tilt.js"></script>
+            <div class="profile-container">
+                <img class="pp" src="./pfp.jpg" draggable="false">
+                    <p class="username breathing" data-tooltip="uid: 1">CoolGuy</p>
+
+                
+                    <div class="bio-container">
+
+                        <div class="pfp">
+                          <div class="div11" style="margin-top:20px" bis_skin_checked="1">
+                            <div class="jR3tWx_3a4a8dcc3beaf4519bf5" bis_skin_checked="1">
+                                <!-- Existing presence structure -->
+                                <div class="s0RmBy_7e7f93f4c67d51b4dcc8" bis_skin_checked="1">
+                                    <div class="l1Y0YS_ec83115ffbe626222d81" bis_skin_checked="1">
+                                        <img id="dynamicAvatar" src="https://cdn.discordapp.com/avatars/927917673344557108/f88a9b172832a07228da995ffa005c29.webp" 
+                                             alt="Discord Avatar" 
+                                             style="width:70px;height:70px;border-radius:50%">
+                                        <img id="statusIndicator" src="https://assets.guns.lol/idle.png" 
+                                             class="lWepc0_123666a39835a15d8188" alt="Status">
+                                    </div>
+                                </div>
+                                
+                                <div class="s1yYwc_167257ca9e3d7cedbb60" bis_skin_checked="1">
+                                    <div class="ebYecn_f471df88ff8764d2fdb6" bis_skin_checked="1">
+                                        <div class="nec1VU_1b6e8123b898c40378c5" bis_skin_checked="1">
+                                            <span id="username" style="font-weight:600;font-size:20px">CoolGuy</span>
+                                            <div class="hQYSR2_3e1b38670f31f8b5bf00" bis_skin_checked="1">
+                                                <div class="o2WSYB_cc7f47191677333de438" bis_skin_checked="1">
+                                                    <img src="https://cdn.discordapp.com/badge-icons/6df5892e0f35b051f8b61eace34f4967.png" 
+                                                         alt="Discord Badge" 
+                                                         style="height:22px;width:22px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 id="activityStatus" style="font-weight:300;font-size:14.5px">
+                                            <span class="om0ZxG_71190281adeb11467cea" id="statusText"></span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Spotify Container -->
+                            <div id="spotifyContainer" class="spotifyContainer" style="margin-top:15px;display:none;">
+                                <div class="div1" bis_skin_checked="1">
+                                    <div class="ebYecn_f471df88ff8764d2fdb6" bis_skin_checked="1">
+                                        <div class="nec1VU_1b6e8123b898c40378c5" bis_skin_checked="1" style="gap:12px;align-items:center">
+                                            
+                                            <div style="flex-grow:1">
+                                                <marequee><div style="font-weight:600;font-size:14px" id="spotifyTitle"></div></marequee>
+                                              <marequee><div style="font-size:12px;color:#b9bbbe" id="spotifyDetails"></div></marequee>
+                                                <div style="background:#40444b;height:3px;border-radius:2px;margin-top:6px">
+                                                    <div id="spotifyProgress" style="height:100%;background:#1db954;border-radius:2px;width:0%;transition:width 1s linear"></div>
+                                                </div>
+                                            </div>
+                                            <img id="spotifyAlbumArt" src="" 
+                                                 alt="Album Art" 
+                                                 style="width:50px;height:50px;border-radius:4px">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+ </div>
+                
+
+
+
+                <div class="bioline"></div>
+
+                <div class="links-container" id="linksDiv">
+                    <div class="logo discordinvite" onclick="window.open('https://discord.com/invite/gKTyqbc5', '_blank');">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="links" viewBox="0 0 16 16">
+                            <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                        </svg>
+                    </div>
+ <!-- GitHub Icon -->
+<div class="logo github" onclick="window.open('https://github.com/guywiththecoolusername', '_blank');">
+    <svg xmlns="http://www.w3.org/2000/svg" class="links" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+    </svg>
+</div>
+<!-- Instagram Icon -->
+<div class="logo instagram" onclick="window.open('https://www.instagram.com/coolguy.kys/', '_blank');">
+    <svg xmlns="http://www.w3.org/2000/svg" class="links" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm0 1.44c2.136 0 2.39.009 3.233.047.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.009 2.39-.047 3.233c-.036.78-.166 1.203-.276 1.485-.145.374-.318.64-.598.92-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.844.038-1.097.047-3.233.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.598-.92c-.11-.282-.24-.705-.276-1.485-.038-.844-.047-1.097-.047-3.233s.009-2.39.047-3.233c.036-.78.166-1.203.276-1.485.145-.374.318-.64.598-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.844-.038 1.097-.047 3.233-.047"/>
+        <path d="M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216zm0 6.775a2.667 2.667 0 1 1 0-5.334 2.667 2.667 0 0 1 0 5.334"/>
+        <circle cx="12.27" cy="3.73" r=".96"/>
+    </svg>
+</div>
+
+<!-- OnlyFans Icon -->
+<div class="logo onlyfans" onclick="window.open('https://shattereddisk.github.io/rickroll/rickroll.mp4', '_blank');">
+    <svg xmlns="http://www.w3.org/2000/svg" class="links" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 0 8 8 8 8 0 0 0-8-8zm5.63 9.82a4.5 4.5 0 0 1-5.85 2.68 4.49 4.49 0 0 1-2.68-5.85 4.5 4.5 0 0 1 5.85-2.68 4.49 4.49 0 0 1 2.68 5.85zm-1.75-1.03a2.79 2.79 0 0 0-3.62-1.66 2.79 2.79 0 0 0-1.66 3.62 2.79 2.79 0 0 0 3.62 1.66 2.79 2.79 0 0 0 1.66-3.62z"/>
+    </svg>
+</div>
+
+
+    <script>
+const volumeControl = document.querySelector('.volume-control');
+const volumeIcon = document.querySelector('.volume-icon');
+const volumeSlider = document.querySelector('.volume-slider');
+const audio = document.getElementById('backgroundsong');
+
+// Store the last volume value before muting
+let lastVolume = volumeSlider.value;
+
+volumeIcon.addEventListener('click', () => {
+    volumeControl.classList.toggle('muted');
+    audio.muted = !audio.muted;
+    
+    if (audio.muted) {
+        // Store current volume before setting to 0
+        lastVolume = volumeSlider.value;
+        volumeSlider.value = 0;
+        audio.volume = 0;
+    } else {
+        // Restore previous volume
+        volumeSlider.value = lastVolume;
+        audio.volume = lastVolume / 100;
+    }
+});
+
+volumeSlider.addEventListener('input', (e) => {
+    audio.volume = e.target.value / 100;
+    // If volume is moved from 0, unmute
+    if (e.target.value > 0 && audio.muted) {
+        volumeControl.classList.remove('muted');
+        audio.muted = false;
+    }
+    // If volume is set to 0, mute
+    if (e.target.value == 0) {
+        volumeControl.classList.add('muted');
+        audio.muted = true;
+    }
+    lastVolume = e.target.value;
+});
+        function copyAddress(id) {
+            const svgElement = document.getElementById(id + 'Input');
+            const title = svgElement.getAttribute('title');
+    
+            navigator.clipboard.writeText(title).then(() => {
+                alert('copied to clipboard: ' + title);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+        function removeOverlay() {
+    var overlay = document.getElementById('overlay');
+    var userpage = document.getElementById('user-page');
+    var video = document.getElementById('backgroundsong');
+    var background = document.querySelector('.background');
+
+    overlay.style.opacity = '0';
+    userpage.style.display = 'flex';
+    video.volume = 0.3;
+    video.play();
+    
+    // Add dynamic blur
+
+
+    setTimeout(function() { 
+        overlay.style.display = 'none';
+    }, 2000);
+}
+
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    
+    var texts = [
+      'Nigga 1',
+      'Nigga 2',
+      'Nigga 3'
+    ];
+    
+    document.title = '';
+    let currentIndex = 0;
+    
+    async function switchTitle() {
+        document.title = texts[currentIndex];
+    
+        await sleep(700);
+    
+        currentIndex = (currentIndex + 1) % texts.length;
+    
+        switchTitle();
+    }
+    
+    switchTitle();
+
+    </script>
+
+</body>
+<script>
+const DISCORD_ID = '927917673344557108';
+    const WS_URL = 'wss://api.lanyard.rest/socket';
+    let currentActivity = null;
+    
+    const ws = new WebSocket(WS_URL);
+    
+    ws.onopen = () => {
+        ws.send(JSON.stringify({
+            op: 2,
+            d: { subscribe_to_id: DISCORD_ID }
+        }));
+    };
+    
+    ws.onmessage = ({ data }) => {
+        const packet = JSON.parse(data);
+        if (['INIT_STATE', 'PRESENCE_UPDATE'].includes(packet.t)) {
+            handlePresenceUpdate(packet.d);
+        }
+    };
+    
+    function handlePresenceUpdate(data) {
+        // Update core presence
+        document.getElementById('dynamicAvatar').src = 
+            `https://cdn.discordapp.com/avatars/${DISCORD_ID}/${data.discord_user.avatar}.webp?size=256`;
+        
+        document.getElementById('statusIndicator').src = 
+            `https://assets.guns.lol/${data.discord_status || 'offline'}.png`;
+        
+        document.getElementById('username').textContent = 
+            data.discord_user.global_name || data.discord_user.username;
+    
+        // Handle activities
+        const spotifyActivity = data.activities.find(a => a.type === 2);
+        const customStatus = data.activities.find(a => a.type === 4);
+        
+        if (spotifyActivity) {
+            currentActivity = {
+                type: 'spotify',
+                data: {
+                    ...spotifyActivity,
+                    spotify: data.spotify // Include root spotify data
+                }
+            };
+        } else if (customStatus) {
+            currentActivity = {
+                type: 'custom',
+                data: customStatus
+            };
+        } else {
+            currentActivity = null;
+        }
+    
+        updateActivityDisplay();
+    }
+    
+    function updateActivityDisplay() {
+        const spotifyContainer = document.getElementById('spotifyContainer');
+        const statusText = document.getElementById('statusText');
+    
+        if (currentActivity?.type === 'spotify') {
+            // Spotify display
+            spotifyContainer.style.display = 'block';
+            statusText.textContent = 'Listening to Spotify';
+            
+            const { spotify } = currentActivity.data;
+            document.getElementById('spotifyAlbumArt').src = spotify.album_art_url;
+            document.getElementById('spotifyTitle').textContent = spotify.song;
+            document.getElementById('spotifyDetails').textContent = `${spotify.artist} • ${spotify.album}`;
+            
+            // Progress calculation
+            const totalDuration = spotify.timestamps.end - spotify.timestamps.start;
+            const currentProgress = Date.now() - spotify.timestamps.start;
+            const progressPercent = (currentProgress / totalDuration) * 100;
+            
+            document.getElementById('spotifyProgress').style.width = 
+                `${Math.min(progressPercent, 100)}%`;
+    
+        } else if (currentActivity?.type === 'custom') {
+            // Custom status display
+            spotifyContainer.style.display = 'none';
+            
+        } else {
+            // No activity
+            spotifyContainer.style.display = 'none';
+            statusText.textContent = `Last seen ${new Date().toLocaleTimeString()}`;
+        }
+    }
+    
+    // Update progress every second
+    setInterval(() => {
+        if (currentActivity?.type === 'spotify') {
+            const { timestamps } = currentActivity.data.spotify;
+            const total = timestamps.end - timestamps.start;
+            const current = Date.now() - timestamps.start;
+            document.getElementById('spotifyProgress').style.width = 
+                `${Math.min((current / total) * 100, 100)}%`;
+        }
+    }, 1000);
+    </script>
+
